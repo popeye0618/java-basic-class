@@ -6,6 +6,18 @@ public class Day5Practice {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // 1부터 10까지 for문, while문을 사용해서 출력
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("i = " + i);
+        }
+
+        int n = 1;
+        while (n <= 10) {
+            System.out.println("n = " + n);
+            n++; // n += 1
+        }
+
+
         // 구구단 출력
         System.out.print("출력할 단을 입력하세요 (2~9): ");
         int num = sc.nextInt();
