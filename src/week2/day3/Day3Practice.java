@@ -20,13 +20,26 @@ public class Day3Practice {
         int average1 = (num1 + num2 + num3) / 3;
         System.out.println("average = " + average1);
 
-        // 형변환 보여주기
+        // 형변환
         double average2 = (double) (num1 + num2 + num3) / 3;
+        double average3 =  (num1 + num2 + num3) / 3.0;
         System.out.println("average = " + average2);
+        System.out.println("average3 = " + average3);
 
         // 소수점 첫 번째 자리 반올림
-        double average3 = Math.round(average2);
-        System.out.println("average3 = " + average3);
+        double average4 = Math.round(average2);
+        System.out.println("average3 = " + average4);
+
+        // 자동 형변환
+        int a = 2;
+        double dd = a;
+        System.out.println("dd = " + dd); // dd == 2.0
+
+        // 명시적 형변환
+        double d = 3.5;
+        int t = (int) d;
+        System.out.println("t = " + t); // t == 3
+
 
         // 문자열 -> 숫자 형변환
         String s = "100";
