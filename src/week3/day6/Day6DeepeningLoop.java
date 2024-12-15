@@ -9,14 +9,12 @@ public class Day6DeepeningLoop {
 
         // 무한 반복문
         System.out.println("무한 반복문 시작");
-        int counter = 0;
+
         while (true) {
-            System.out.println("반복 횟수: " + counter);
-            counter++;
-            if (counter >= 5) { // 일정 조건에서 break
-                System.out.println("무한 반복문 종료");
-                break;
-            }
+            System.out.print("숫자를 입력하세요. 0을 입력하면 종료됩니다: ");
+            int input = sc.nextInt();
+            if (input == 0) break;
+            System.out.println();
         }
 
         // break문 사용
@@ -31,12 +29,12 @@ public class Day6DeepeningLoop {
         }
 
         // continue문 사용
-        System.out.println("\n1부터 10까지 짝수 출력:");
         for (int i = 1; i <= 10; i++) {
-            if (i % 2 != 0) { // 홀수는 스킵
+            if (i == 5) {
+                System.out.println("5 건너뛰기");
                 continue;
             }
-            System.out.println(i);
+            System.out.println("i = " + i);
         }
 
         // 중첩 반복문 예제: 2단부터 9단까지 구구단 출력
