@@ -4,53 +4,32 @@ import java.util.Scanner;
 
 public class Day4Condition {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        // if 조건문
-        boolean flag = true;
-
-        if (flag) {
-            // 조건이 참일 때 실행할 코드
-        }
-
-        //if - else 조건문
-        if (flag) {
-            // 조건이 참일 때 실행할 코드
+        // if - else 문
+        int number = sc.nextInt();
+        if (number > 0) {
+            System.out.println("양수입니다.");
+        } else if (number < 0) {
+            System.out.println("음수입니다.");
         } else {
-            // 조건이 거짓일 때 실행할 코드
-        }
-
-        // 중첩 조건문
-        if (flag) {
-            if (true) {
-
-            }
-        } else {
-
+            System.out.println("0입니다.");
         }
 
         // switch 조건문
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("숫자를 입력하세요: ");
-        int num = sc.nextInt();
-
-        switch (num) {
+        int day = 3; // 월요일: 1, 화요일: 2, ...
+        switch (day) {
             case 1:
-                System.out.println("num = 1");
+                System.out.println("월요일");
                 break;
             case 2:
-                System.out.println("num = 2");
+                System.out.println("화요일");
                 break;
             case 3:
-                // break문 없을 때
-                System.out.println("num = 3");
-
-            case 4:
-                System.out.println("num = 4");
+                System.out.println("수요일");
                 break;
             default:
-                System.out.println("num은 1, 2, 3, 4 중 하나가 아닙니다.");
+                System.out.println("잘못된 값입니다.");
         }
 
         // 삼항 연산자
@@ -59,7 +38,7 @@ public class Day4Condition {
         System.out.print("두 번째 숫자를 입력하세요: ");
         int num2 = sc.nextInt();
 
-        int maxNum = num1 > num2 ? num1 : num2;
+        int maxNum = (num1 > num2) ? num1 : num2;
         System.out.println("더 큰 숫자는 " + maxNum + "입니다.");
 
 
