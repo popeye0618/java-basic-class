@@ -6,7 +6,11 @@ public class Day10Method {
     public static void main(String[] args) {
 
         Cat cat = new Cat();
-        cat.bark();
+        cat.name = "고영희";
+        cat.age = 5;
+
+        String catName = cat.getName();
+        System.out.println("고양이 이름은 = " + catName);
 
         int sum = add(1, 2);
         System.out.println("두 수의 합은: " + sum);

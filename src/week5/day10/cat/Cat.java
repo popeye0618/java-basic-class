@@ -19,18 +19,18 @@ public class Cat {
         this.age = age;
     }
 
-    // 고양이 울음소리
-    public void bark() {
-        System.out.println("야옹~");
-    }
-
     // 고양이 필드를 이용한 메소드
     public void introduce() {
-        System.out.println("저희 고양이 이름은 " + name + "이고 " + age + "살 이에요~");
+        System.out.println("제 이름은 " + name + "이고 " + age + "살 이에요~");
     }
 
-    // 반환 값이 있는 메소드
+    // 반환 값이 있는 메소드 (고양이 이름을 반환하는 메소드)
     public String getName() {
         return name;
+    }
+
+    // 매개 변수가 있는 메소드
+    public void introduceMaster(String master) {
+        System.out.println("제 주인의 이름은 " + master + "이에요!");
     }
 }
