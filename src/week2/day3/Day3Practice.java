@@ -28,7 +28,7 @@ public class Day3Practice {
 
         // 소수점 첫 번째 자리 반올림
         double average4 = Math.round(average2);
-        System.out.println("average3 = " + average4);
+        System.out.println("average4 = " + average4);
 
         // 자동 형변환
         int a = 2;
