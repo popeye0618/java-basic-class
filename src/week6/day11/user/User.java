@@ -7,13 +7,6 @@ public class User {
 	public User() {
 	}
 
-
-	// 비밀번호 변경 메서드(로그인 필요)
-	public void changePassword(String newPassword) {
-		password = newPassword;
-		System.out.println("비밀번호 변경 성공!");
-	}
-
 	// 로그인 메서드
 	public boolean login(String inputId, String inputPw) {
 
