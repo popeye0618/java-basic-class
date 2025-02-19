@@ -15,5 +15,10 @@ public class Payment {
 	public double calculate(double price1, double price2) {
 		return price1 + price2;
 	}
+
+	// 연필 가격 계산
+	public int calculate(int n) {
+		return 1500 * n;
+	}
 }
 

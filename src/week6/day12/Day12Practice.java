@@ -1,5 +1,7 @@
 package week6.day12;
 
+import java.util.Scanner;
+
 import week6.day12.book.Book;
 import week6.day12.calculator.ShapeCalculator;
 import week6.day12.payment.Payment;
@@ -8,6 +10,7 @@ public class Day12Practice {
 	public static void main(String[] args) {
 
 		// todo: 더 동적인 프로그램을 만들기 위해 Scanner을 활욯해보자!
+		Scanner sc = new Scanner(System.in);
 
 		// 1. 쇼핑몰 결제 계산기
 		Payment payment = new Payment();
@@ -18,6 +21,11 @@ public class Day12Practice {
 
 		// 실수 상품 가격 합계 계산
 		System.out.println("두 상품 총액(실수): " + Math.round(payment.calculate(12.5, 8.49) * 100) / 100.0 + "원");
+
+		// 연필 가격 계산
+		System.out.print("연필(1500원) 몇 개를 구매할까요? ");
+		int n = sc.nextInt();
+		System.out.println("연필 총액: " + payment.calculate(n) + "원 입니다.");
 
 
 		// 2. 도형 면적 계산기
