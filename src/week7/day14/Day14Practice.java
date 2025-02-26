@@ -1,5 +1,7 @@
 package week7.day14;
 
+import java.util.Scanner;
+
 import week7.day14.electronic_device.ElectronicDevice;
 import week7.day14.electronic_device.Laptop;
 import week7.day14.electronic_device.Smartphone;
@@ -27,6 +29,39 @@ public class Day14Practice {
 
 		// 다운 캐스팅
 		Smartphone smartphone = (Smartphone) device;
+
+
+
+		// 보너스 문제
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("높이를 입력하세요: ");
+		int n = sc.nextInt();
+
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n-i-1; j++) {
+				System.out.print(" ");
+			}
+			for(int j=0; j<i+1; j++) {
+				System.out.print("*");
+			}
+			for(int j=0; j<i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for(int i=0; i<n-1; i++) {
+			for(int j=0; j<i+1; j++) {
+				System.out.print(" ");
+			}
+			for(int j=0; j<n-1-i; j++) {
+				System.out.print("*");
+			}
+			for(int j=0; j<n-2-i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 
 	}
 }
